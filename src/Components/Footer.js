@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
    
@@ -12,12 +13,16 @@ export const Footer = () => {
         backgroundColor:"#6c63ff"
         
     }
+    let linkstyle={
+        color:"white",
+        textDecoration:"none"
+    }
     return (
         
         <footer className="  text-light  py-3" style={footStyle}>
             <p className="text-center">
-                 &copy; <Link to="https://souravbose7399.github.io/Project1-React/">SouravTech.io</Link>
-                 3rd July-2021
+                 &copy; <Link style={linkstyle} to="https://souravbose7399.github.io/Project1-React/"> SouravTech.io </Link>
+                  3rd July-2021
             </p>
 
 
