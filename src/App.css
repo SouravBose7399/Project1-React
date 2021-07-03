@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+
+/* importing fonts from Google fonts   */
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Ubuntu+Condensed&display=swap');
+
+/* Navbar Css Start  */
+
+.navbar{
+  background-color:rgb(108, 99 ,255) !important;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  border-radius: 20px;
+ 
+}
+.navbar-brand{
+  color: #ffffff !important;
+  font-size: 2.1rem !important;
+}
+.name:hover{
+  color: rgb(224, 232, 240);
+}
+.activate{
+  font-weight: bold;
+  border-bottom: 2px solid rgb(245, 240, 240);
+  /* color: rgb(255, 255, 255) !important; */
+}
+.nav-link{
+  color: rgb(13, 6, 112) !important;
+  font-size: 1.3rem !important;
+}
+.nav-link:hover{
+  color: rgb(252, 244, 244) !important;
+
+}
+.bg-primary{
+  background-color: #6c63ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand-name{
+  color: rgb(83, 83, 240);
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar Css Ends  */
+
+
+
+
+
+
+
+
+
+
+
+/* home and about us page css  */
+
+#header{
+  height: 80vh;
+  width: 100%;
+  margin-top: 2.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 7rem;
 }
 
-.App-link {
-  color: #61dafb;
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: rgb(43, 113, 219);
+  border: 2px solid rgb(43, 113, 219);
+  text-decoration: none;
+}
+#header .btn-get-started:hover{
+  background-color: rgb(9, 116, 80);
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+
+
+
+
+
+/* animation of Home page  */
+
+.animated{
+  text-align: right;
+  /* display: flex; */
+  height: 30rem;
+  width: 30rem;
+  margin-top: -7rem;
+  /* margin-left: -2rem; */
+  animation:up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(15px);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Animation of about us page  */
+
+.animated2{
+  text-align: right;
+  /* display: flex; */
+  height: 30rem;
+  width: 30rem;
+  margin-top: -7rem;
+  /* margin-left: -2rem; */
+  animation:left-right 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes left-right{
+  0%{
+    transform: translateX(15px);
+  }
+  100%{
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes left-right{
+  0%{
+    transform: translateX(15px);
+  }
+  100%{
+    transform: translateX(-15px);
   }
 }
