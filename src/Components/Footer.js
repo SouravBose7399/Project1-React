@@ -16,7 +16,7 @@ export const Footer = () => {
         
         <footer className="  text-light  py-3" style={footStyle}>
             <p className="text-center">
-                 &copy; souravtech.io 
+                 &copy; <Link to="https://souravbose7399.github.io/Project1-React/">SouravTech.io</Link>
                  3rd July-2021
             </p>
 
